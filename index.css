@@ -1,0 +1,85 @@
+body{
+    font-family: arial;
+    background-color: #666;
+    color: black;
+}
+#content{
+    width: 90%;
+    margin: 10% auto;
+}
+#content  p{
+text-align: justify;
+}
+#content .ad{
+    font-size: 1.4em;
+    margin: 3em 0;
+    text-align: right;
+}
+#content .ad a{
+    background-color:#ffd633;
+    padding: 0.5em;
+    text-decoration: none;
+    margin-left: 1em;
+}
+#content .ad a:hover{
+    
+    animation: 1s change infinite;
+ }
+ @keyframes change{
+     from{
+         background-color:#ffd633 ;
+     }
+     to{
+      background-color: #ff8533;
+     }
+ }
+#modal {
+    background-color: #888;
+    padding: 5%;
+    display: none;
+    position: fixed;
+    top: 22.5%;
+    left: 30%;
+    bottom: 20%;
+    z-index: 1;
+}
+#modal:target{
+    display: block;
+}
+#modal input{
+    padding: 3%;
+    width: 79.7%;
+    margin-left: 2em;
+    
+}
+
+#modal button{
+    padding: 1.3em;
+    width: 87%;
+    margin-left: 2em;
+    
+}
+#modal a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    
+}
+#modal:target+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #222A;
+    top: 0;
+    left: 0;
+}
+#modal a:hover{
+    
+    color: crimson;
+}
+#modal button:hover{
+    background-color: #e6e6e6;
+}
